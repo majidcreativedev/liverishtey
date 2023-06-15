@@ -1,0 +1,1669 @@
+<!doctype html>
+<html lang="en" oncontextmenu="return false">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no, viewport-fit=cover user-scalable=no">
+    <link href="style.css" rel="stylesheet">
+    <script src=" jquery.min.js">
+    </script>
+    <style>
+      ::-webkit-scrollbar {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body class="container-fluid antialiased text-black font-sans bg-fuchsia-50 mb-5">
+    <div class="bg-teal-800 text-white p-2 text-center font-serif font-medium text-xl">
+      <h1>Liverishtey - Fast Settlement</h1>
+      <p class="text-xs">Copyright © Easymatri Matrimonial Consortium. All rights reserved.</p>
+      <span class="text-sm text-yellow-400">All Ads belongs to it's owners & Newspapers.! &nbsp; This demonstration is
+        for education & training purpose only.</span>
+    </div>
+
+    <form>
+      <div class="flex flex-wrap" id="filter">
+        <div class="flex bg-stone-100 w-full overflow-x-auto whitespace-no-wrap text-centers tracking-normal leading-3">
+          <div class="mx-auto px-3 py-1 my-1 flex flex-wrap flex-shrink-0 text-sm justify-between overflow-hidden">
+            <div class="form-group relative inline-flex m-1">
+              <svg class="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" viewBox="0 0 412 232">
+                <path
+                  d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
+                  fill="#000" fill-rule="nonzero" />
+              </svg>
+              <select data-filter="gender"
+                class="filter-gender filter form-control block w-full py-1 px-2 pl-5 pr-10 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded-full hover:border-gray-400 focus:outline-none appearance-none shadow-sm">
+                <option value="">Looking for</option>
+              </select>
+            </div>
+            <div class="form-group relative inline-flex m-1">
+              <svg class="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" viewBox="0 0 412 232">
+                <path
+                  d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
+                  fill="#000" fill-rule="nonzero" />
+              </svg>
+              <select data-filter="marital"
+                class="filter-marital filter form-control block w-full py-1 px-2 pl-5 pr-10 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded-full hover:border-gray-400 focus:outline-none appearance-none shadow-sm">
+                <option value="">Marital Status</option>
+              </select>
+            </div>
+            <div class="form-group relative inline-flex m-1">
+              <svg class="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" viewBox="0 0 412 232">
+                <path
+                  d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
+                  fill="#000" fill-rule="nonzero" />
+              </svg>
+              <select data-filter="edu"
+                class="filter-edu filter form-control block w-full py-1 px-6 pl-5 pr-10 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded-full hover:border-gray-400 focus:outline-none appearance-none shadow-sm">
+                <option value="">Education</option>
+              </select>
+            </div>
+            <div class="form-group relative inline-flex m-1">
+              <svg class="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" viewBox="0 0 412 232">
+                <path
+                  d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
+                  fill="#000" fill-rule="nonzero" />
+              </svg>
+              <select data-filter="age"
+                class="filter-age filter form-control block w-full py-1 px-2 pl-5 pr-10 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded-full hover:border-gray-400 focus:outline-none appearance-none shadow-sm">
+                <option value="">Age</option>
+              </select>
+            </div>
+            <div class="form-group relative inline-flex m-1">
+              <svg class="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" viewBox="0 0 412 232">
+                <path
+                  d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
+                  fill="#000" fill-rule="nonzero" />
+              </svg>
+              <select data-filter="height"
+                class="filter-height filter form-control block w-full py-1 px-5 pl-5 pr-10 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded-full hover:border-gray-400 focus:outline-none appearance-none shadow-sm">
+                <option value="">Height</option>
+              </select>
+            </div>
+            <div class="form-group relative inline-flex m-1">
+              <svg class="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" viewBox="0 0 412 232">
+                <path
+                  d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
+                  fill="#000" fill-rule="nonzero" />
+              </svg>
+              <select data-filter="mode"
+                class="filter-mode filter form-control block w-full py-1 px-5 pl-5 pr-10 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded-full hover:border-gray-400 focus:outline-none appearance-none shadow-sm">
+                <option value="">Urgency</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form id="search-form" action="" method="POST" enctype="multipart/form-data">
+      <header>
+        <div class="container mx-auto px-2 py-1">
+          <div class="form-group relative mt-3 max-w-lg mx-auto">
+            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+              <svg class="h-5 w-5 text-teal-500" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <input
+              class="form-control w-full border rounded pl-10 pr-4 py-2 border-blue-500 focus:outline-none focus:shadow-outline shadow-md"
+              type="text" placeholder="bit.ly/liverishtay">
+          </div>
+        </div>
+      </header>
+    </form>
+    <div class="m-4"></div>
+    <div class="flex flex-wrap justify-center content-around" id="products"></div>
+    <script>
+      var data = [{
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "SSC",
+        "age": "20",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/1.png"
+      },
+      //Primary Male
+
+      //Primary Female
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Below SSC",
+        "age": "21",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/43.png"
+      },
+
+
+      //10th Male
+
+      //10th Female
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "SSC",
+        "age": "20",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/32.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "SSC",
+        "age": "22",
+        "height": "5.4 ",
+        "mode": "Non Urgent",
+        "image": "/img/83.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "SSC",
+        "age": "18",
+        "height": "5.5 ",
+        "mode": "Non Urgent",
+        "image": "/img/97.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "SSC",
+        "age": "25",
+        "height": "5.0 ",
+        "mode": "Urgent",
+        "image": "/img/109.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "SSC",
+        "age": "27",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/120.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "SSC",
+        "age": "24",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/133.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "SSC",
+        "age": "23",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/134.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "SSC",
+        "age": "18",
+        "height": "5.4 ",
+        "mode": "Non Urgent",
+        "image": "/img/144.png"
+      },
+
+
+      //Enter Male
+
+      //Enter Female
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "21",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/13.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "22",
+        "height": "5.6 ",
+        "mode": "Non Urgent",
+        "image": "/img/18.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "26",
+        "height": "5.6 ",
+        "mode": "Non Urgent",
+        "image": "/img/67.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "22",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/85.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "25",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/86.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "28",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/87.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "18",
+        "height": "5.5 ",
+        "mode": "Urgent",
+        "image": "/img/105.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "21",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/126.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "24",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/2.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "19",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/7.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "28",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/9.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "20",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/10.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "25",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/75.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Enter",
+        "age": "24",
+        "height": "5.5 ",
+        "mode": "Non Urgent",
+        "image": "/img/99.png"
+      },
+
+      //Graduate Male
+
+      //Graduate Female
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "25",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/1.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "27",
+        "height": "5.3 ",
+        "mode": "Non Urgent",
+        "image": "/img/47.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "24",
+        "height": "5.4 ",
+        "mode": "Non Urgent",
+        "image": "/img/3.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "21",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/4.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "19",
+        "height": "5.7 ",
+        "mode": "Urgent",
+        "image": "/img/8.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "24",
+        "height": "5.5 ",
+        "mode": "Urgent",
+        "image": "/img/12.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "21",
+        "height": "5.2 ",
+        "mode": "Non Urgent",
+        "image": "/img/16.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "21",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/19.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "25",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/20.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "23",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/21.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "28",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/23.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "26",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/27.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "28",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/28.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "25",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/30.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "38",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/33.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "25",
+        "height": "5.5 ",
+        "mode": "Non Urgent",
+        "image": "/img/35.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "28",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/38.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "21",
+        "height": "5.2 ",
+        "mode": "Non Urgent",
+        "image": "/img/39.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "24",
+        "height": "5.4 ",
+        "mode": "Non Urgent",
+        "image": "/img/40.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "22",
+        "height": "5.4 ",
+        "mode": "Non Urgent",
+        "image": "/img/41.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "26",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/46.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "20",
+        "height": "5.7 ",
+        "mode": "Non Urgent",
+        "image": "/img/49.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "26",
+        "height": "5.2 ",
+        "mode": "Non Urgent",
+        "image": "/img/50.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "22",
+        "height": "5.7 ",
+        "mode": "Urgent",
+        "image": "/img/51.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "23",
+        "height": "5.0 ",
+        "mode": "Urgent",
+        "image": "/img/52.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "27",
+        "height": "5.8 ",
+        "mode": "Urgent",
+        "image": "/img/53.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "23",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/54.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "29",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/55.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "21",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/58.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "20",
+        "height": "5.3 ",
+        "mode": "Non Urgent",
+        "image": "/img/59.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "22",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/60.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "24",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/61.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "39",
+        "height": "5.3 ",
+        "mode": "Non Urgent",
+        "image": "/img/63.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "21",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/64.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "32",
+        "height": "5.5 ",
+        "mode": "Urgent",
+        "image": "/img/65.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "21",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/66.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "22",
+        "height": "5.2 ",
+        "mode": "Non Urgent",
+        "image": "/img/69.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "23",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/71.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "29",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/72.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "25",
+        "height": "5.5 ",
+        "mode": "Urgent",
+        "image": "/img/78.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "23",
+        "height": "5.5 ",
+        "mode": "Non Urgent",
+        "image": "/img/89.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "25",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/91.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "25",
+        "height": "5.5 ",
+        "mode": "Urgent",
+        "image": "/img/92.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "34",
+        "height": "5.5 ",
+        "mode": "Urgent",
+        "image": "/img/95.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "21",
+        "height": "5.0 ",
+        "mode": "Urgent",
+        "image": "/img/96.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "26",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/101.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "32",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/110.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "26",
+        "height": "5.1 ",
+        "mode": "Urgent",
+        "image": "/img/121.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "25",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/122.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "26",
+        "height": "5.0 ",
+        "mode": "Urgent",
+        "image": "/img/123.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "20",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/129.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "26",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/130.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "30",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/132.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "22",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/138.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "19",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/142.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "23",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/145.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "22",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/146.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "24",
+        "height": "5.1 ",
+        "mode": "Urgent",
+        "image": "/img/147.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "24",
+        "height": "5.6 ",
+        "mode": "Non Urgent",
+        "image": "/img/149.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "36",
+        "height": "5.3 ",
+        "mode": "Non Urgent",
+        "image": "/img/151.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "24",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/154.png"
+      },
+
+      //P.G Male
+
+      //P.G Female
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "25",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/5.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "24",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/6.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "22",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/11.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "21",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/14.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "30",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/15.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "23",
+        "height": "5.1 ",
+        "mode": "Non Urgent",
+        "image": "/img/17.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "23",
+        "height": "5.1 ",
+        "mode": "Urgent",
+        "image": "/img/22.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "26",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/24.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "32",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/25.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "25",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/26.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "23",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/29.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "30",
+        "height": "5.3 ",
+        "mode": "Non Urgent",
+        "image": "/img/34.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "28",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/36.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "23",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/37.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "24",
+        "height": "5.0 ",
+        "mode": "Urgent",
+        "image": "/img/42.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "26",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/44.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "24",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/45.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "26",
+        "height": "5.4 ",
+        "mode": "Non Urgent",
+        "image": "/img/56.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Graduate",
+        "age": "36",
+        "height": "5.4 ",
+        "mode": "Non Urgent",
+        "image": "/img/57.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "26",
+        "height": "5.5 ",
+        "mode": "Urgent",
+        "image": "/img/62.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "22",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/68.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "35",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/70.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "25",
+        "height": "5.7 ",
+        "mode": "Urgent",
+        "image": "/img/73.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "26",
+        "height": "5.7 ",
+        "mode": "Urgent",
+        "image": "/img/74.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "25",
+        "height": "5.5 ",
+        "mode": "Urgent",
+        "image": "/img/76.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "27",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/77.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "23",
+        "height": "5.7 ",
+        "mode": "Urgent",
+        "image": "/img/79.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "24",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/82.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "30",
+        "height": "5.3 ",
+        "mode": "Non Urgent",
+        "image": "/img/84.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "23",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/88.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "32",
+        "height": "5.6 ",
+        "mode": "Non Urgent",
+        "image": "/img/90.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "22",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/93.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "22",
+        "height": "5.5 ",
+        "mode": "Non Urgent",
+        "image": "/img/100.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "24",
+        "height": "5.7 ",
+        "mode": "Non Urgent",
+        "image": "/img/104.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "24",
+        "height": "5.7 ",
+        "mode": "Urgent",
+        "image": "/img/108.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "32",
+        "height": "5.7 ",
+        "mode": "Urgent",
+        "image": "/img/111.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "26",
+        "height": "5.0 ",
+        "mode": "Urgent",
+        "image": "/img/112.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "22",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/113.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "22",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/114.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "26",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/116.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "24",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/117.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "23",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/118.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "27",
+        "height": "5.3 ",
+        "mode": "Urgent",
+        "image": "/img/119.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "24",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/124.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "23",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/127.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "26",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/128.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "24",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/135.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "25",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/136.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "28",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/137.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "34",
+        "height": "5.5 ",
+        "mode": "Urgent",
+        "image": "/img/140.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "24",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/141.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "22",
+        "height": "5.5 ",
+        "mode": "Non Urgent",
+        "image": "/img/150.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "P.Graduate",
+        "age": "22",
+        "height": "5.5 ",
+        "mode": "Urgent",
+        "image": "/img/153.png"
+      },
+
+      //Engineer Male
+
+      //Engineer Female
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Engineer",
+        "age": "19",
+        "height": "5.5 ",
+        "mode": "Non Urgent",
+        "image": "/img/31.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Engineer",
+        "age": "24",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/80.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Engineer",
+        "age": "24",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/81.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Engineer",
+        "age": "22",
+        "height": "5.6 ",
+        "mode": "Non Urgent",
+        "image": "/img/102.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Engineer",
+        "age": "21",
+        "height": "5.1 ",
+        "mode": "Urgent",
+        "image": "/img/106.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Engineer",
+        "age": "19",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/115.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Engineer",
+        "age": "27",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/125.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Engineer",
+        "age": "24",
+        "height": "5.5 ",
+        "mode": "Urgent",
+        "image": "/img/139.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Engineer",
+        "age": "25",
+        "height": "5.4 ",
+        "mode": "Urgent",
+        "image": "/img/152.png"
+      },
+
+      //Doctor Male
+
+      //Doctor Female
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Doctor",
+        "age": "23",
+        "height": "5.7 ",
+        "mode": "Non Urgent",
+        "image": "/img/94.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Doctor",
+        "age": "29",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/98.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Doctor",
+        "age": "21",
+        "height": "5.1 ",
+        "mode": "Non Urgent",
+        "image": "/img/103.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Doctor",
+        "age": "26",
+        "height": "5.6 ",
+        "mode": "Urgent",
+        "image": "/img/107.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Doctor",
+        "age": "26",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/131.png"
+      },
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Doctor",
+        "age": "27",
+        "height": "5.0 ",
+        "mode": "Urgent",
+        "image": "/img/143.png"
+      },
+
+      //P.hD Male
+
+      //P.hD Female
+
+      //Aalim Male
+
+      //Aalim Female
+
+      //Hafiz Male
+
+      //Hafiz Female
+      {
+        "gender": "Bride",
+        "marital": "Never Married",
+        "edu": "Hafiz",
+        "age": "22",
+        "height": "5.2 ",
+        "mode": "Urgent",
+        "image": "/img/148.png"
+      },
+      ];
+
+      var products = "",
+        genders = "",
+        maritals = "",
+        edus = "",
+        ages = "",
+        heights = "",
+        modes = "";
+
+      for (var i = 0; i < data.length; i++) {
+        var gender = data[i].gender,
+          marital = data[i].marital,
+          edu = data[i].edu,
+          age = data[i].age,
+          height = data[i].height,
+          mode = data[i].mode,
+          image = data[i].image;
+
+        //create product cards
+        products += "<div class='p-0 m-1 drop-shadow-md shadow-xs bg-white product' data-gender='" +
+          gender + "' data-marital='" + marital + "' data-edu='" + edu + "' data-age='" + age + "' data-height='" +
+          height + "'data-mode='" + mode + "'><div class='product-inner'><img src='" + image + "'></div></div>";
+
+        //create dropdown of genders
+        if (genders.indexOf("<option value='" + gender + "'>" + gender + "</option>") == -1) {
+          genders += "<option value='" + gender + "'>" + gender + "</option>";
+        }
+
+        //create dropdown of Statuss
+        if (maritals.indexOf("<option value='" + marital + "'>" + marital + "</option>") == -1) {
+          maritals += "<option value='" + marital + "'>" + marital + "</option>";
+        }
+
+        //create dropdown of edus
+        if (edus.indexOf("<option value='" + edu + "'>" + edu + "</option>") == -1) {
+          edus += "<option value='" + edu + "'>" + edu + "</option>";
+        }
+
+        //create dropdown of ages
+        if (ages.indexOf("<option value='" + age + "'>" + age + "</option>") == -1) {
+          ages += "<option value='" + age + "'>" + age + "</option>";
+        }
+
+        //create dropdown of heights
+        if (heights.indexOf("<option value='" + height + "'>" + height + "</option>") == -1) {
+          heights += "<option value='" + height + "'>" + height + "</option>";
+        }
+
+        //create dropdown of modes
+        if (modes.indexOf("<option value='" + mode + "'>" + mode + "</option>") == -1) {
+          modes += "<option value='" + mode + "'>" + mode + "</option>";
+        }
+      }
+
+      $("#products").html(products);
+      $(".filter-gender").append(genders);
+      $(".filter-marital").append(maritals);
+      $(".filter-edu").append(edus);
+      $(".filter-age").append(ages);
+      $(".filter-height").append(heights);
+      $(".filter-mode").append(modes);
+
+
+      var filtersObject = {};
+
+      //on filter change
+      $(".filter").on("change", function () {
+        var filterName = $(this).data("filter"),
+          filterVal = $(this).val();
+
+        if (filterVal == "") {
+          delete filtersObject[filterName];
+        } else {
+          filtersObject[filterName] = filterVal;
+        }
+
+        var filters = "";
+
+        for (var key in filtersObject) {
+          if (filtersObject.hasOwnProperty(key)) {
+            filters += "[data-" + key + "='" + filtersObject[key] + "']";
+          }
+        }
+
+        if (filters == "") {
+          $(".product").show();
+        } else {
+          $(".product").hide();
+          $(".product").hide().filter(filters).show();
+        }
+      });
+
+      //on search form submit
+      $("#search-form").submit(function (e) {
+        e.preventDefault();
+        var query = $("#search-form input").val().toLowerCase();
+
+        $(".product").hide();
+        $(".product").each(function () {
+          var gender = $(this).data("gender").toLowerCase(),
+            marital = $(this).data("marital").toLowerCase(),
+            edu = $(this).data("edu").toLowerCase(),
+            age = $(this).data("age").toLowerCase(),
+            height = $(this).data("height").toLowerCase(),
+            mode = $(this).data("mode").toLowerCase();
+
+          if (gender.indexOf(query) > -1 || marital.indexOf(query) > -1 ||
+            edu.indexOf(query) > -1 ||
+            age.indexOf(query) > -1 ||
+            height.indexOf(query) > -1 || mode.indexOf(query) > -1) {
+            $(this).show();
+          }
+        });
+      });
+    </script>
+
+  </body>
+
+</html>
